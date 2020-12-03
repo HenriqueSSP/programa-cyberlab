@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,7 +38,9 @@ namespace Cyberlab
                 if (reader.Read())
                 {
                     txt_nome.Text = Convert.ToString(reader["nome_cli"]);
-                    txt_tipo.Text = Convert.ToString()
+                    txt_tipo.Text = Convert.ToString(reader["tipo_agen"]);
+                    txt_data.Text = Convert.ToString((double)reader["data_agen"]);
+                    txt_hora.Text = Convert.ToString((double)reader["hora_agen"]);
 
                 }
                 else
