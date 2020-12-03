@@ -71,6 +71,7 @@ namespace Cyberlab
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Name = "MenuTI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuTI";
             this.ResumeLayout(false);
 
