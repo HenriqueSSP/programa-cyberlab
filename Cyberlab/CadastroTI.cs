@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,6 +13,7 @@ namespace Cyberlab
 {
     public partial class CadastroTI : Form
     {
+        Thread menu;
         public CadastroTI()
         {
             InitializeComponent();
@@ -31,6 +33,19 @@ namespace Cyberlab
         private void Senha_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            menu = new Thread(novatela);
+            menu.SetApartmentState(ApartmentState.STA);
+            menu.Start();
+        }
+
+        private void novatela()
+        {
+            Application.Run(new Menu());
         }
     }
 }

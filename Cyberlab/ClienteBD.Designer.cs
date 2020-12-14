@@ -163,7 +163,7 @@ namespace Cyberlab
             // maskedTextBox1
             // 
             this.maskedTextBox1.Location = new System.Drawing.Point(181, 201);
-            this.maskedTextBox1.Mask = "(99)9999-99999";
+            this.maskedTextBox1.Mask = "(99)99999-9999";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(151, 20);
             this.maskedTextBox1.TabIndex = 14;
