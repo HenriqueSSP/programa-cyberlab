@@ -70,6 +70,7 @@ namespace Cyberlab
             this.ClientSize = new System.Drawing.Size(504, 311);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuTI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuTI";

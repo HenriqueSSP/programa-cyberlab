@@ -16,7 +16,7 @@ namespace Cyberlab
         MySqlDataReader dr;
         public bool verificarLogin(String login, String senha) {
             //comandos MySql para verificar se tem no banco
-            cmd.CommandText = "select * from RH where login_rh = @login and senha_rh = @senha";
+            cmd.CommandText = "select * from Tecnico where login_tec = @login and senha_tec = @senha";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
             try

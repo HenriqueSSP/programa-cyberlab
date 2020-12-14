@@ -6,13 +6,17 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cyberlab
 {
+    
     public partial class agendamentoBD : Form
     {
+        Thread menu_ti;
+
         MySqlCommand cmd = new MySqlCommand();
         Conexao con = new Conexao();
         MySqlDataReader reader;
@@ -39,8 +43,8 @@ namespace Cyberlab
                 {
                     txt_nome.Text = Convert.ToString(reader["nome_cli"]);
                     txt_tipo.Text = Convert.ToString(reader["tipo_agen"]);
-                    txt_data.Text = Convert.ToString((double)reader["data_agen"]);
-                    txt_hora.Text = Convert.ToString((double)reader["hora_agen"]);
+                    txt_data.Text = reader.GetDateTime("data_agen").ToString("dd/MM/yyyy");
+                    txt_hora.Text = Convert.ToString(reader["hora_agen"]);
 
                 }
                 else
@@ -55,6 +59,19 @@ namespace Cyberlab
             {
                 con.desconectar();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            menu_ti = new Thread(menu);
+            menu_ti.SetApartmentState(ApartmentState.STA);
+            menu_ti.Start();
+        }
+
+        private void menu()
+        {
+            Application.Run(new MenuTI());
         }
     }
 }

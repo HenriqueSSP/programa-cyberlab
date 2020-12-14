@@ -40,6 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txt_pesquisar = new System.Windows.Forms.TextBox();
             this.btn_buscar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +48,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(29, 87);
+            this.label1.Location = new System.Drawing.Point(132, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 8;
@@ -58,7 +59,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(29, 126);
+            this.label2.Location = new System.Drawing.Point(189, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 9;
@@ -69,7 +70,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(29, 163);
+            this.label3.Location = new System.Drawing.Point(187, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 10;
@@ -80,7 +81,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(29, 195);
+            this.label4.Location = new System.Drawing.Point(187, 198);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 13);
             this.label4.TabIndex = 11;
@@ -88,28 +89,28 @@
             // 
             // txt_hora
             // 
-            this.txt_hora.Location = new System.Drawing.Point(66, 195);
+            this.txt_hora.Location = new System.Drawing.Point(226, 195);
             this.txt_hora.Name = "txt_hora";
             this.txt_hora.Size = new System.Drawing.Size(100, 20);
             this.txt_hora.TabIndex = 12;
             // 
             // txt_data
             // 
-            this.txt_data.Location = new System.Drawing.Point(68, 160);
+            this.txt_data.Location = new System.Drawing.Point(226, 160);
             this.txt_data.Name = "txt_data";
             this.txt_data.Size = new System.Drawing.Size(100, 20);
             this.txt_data.TabIndex = 13;
             // 
             // txt_tipo
             // 
-            this.txt_tipo.Location = new System.Drawing.Point(66, 126);
+            this.txt_tipo.Location = new System.Drawing.Point(226, 123);
             this.txt_tipo.Name = "txt_tipo";
             this.txt_tipo.Size = new System.Drawing.Size(100, 20);
             this.txt_tipo.TabIndex = 14;
             // 
             // txt_nome
             // 
-            this.txt_nome.Location = new System.Drawing.Point(123, 84);
+            this.txt_nome.Location = new System.Drawing.Point(226, 80);
             this.txt_nome.Name = "txt_nome";
             this.txt_nome.Size = new System.Drawing.Size(100, 20);
             this.txt_nome.TabIndex = 15;
@@ -119,7 +120,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(29, 39);
+            this.label5.Location = new System.Drawing.Point(129, 42);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 13);
             this.label5.TabIndex = 16;
@@ -127,20 +128,34 @@
             // 
             // txt_pesquisar
             // 
-            this.txt_pesquisar.Location = new System.Drawing.Point(123, 36);
+            this.txt_pesquisar.Location = new System.Drawing.Point(226, 39);
             this.txt_pesquisar.Name = "txt_pesquisar";
             this.txt_pesquisar.Size = new System.Drawing.Size(100, 20);
             this.txt_pesquisar.TabIndex = 17;
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(238, 34);
+            this.btn_buscar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btn_buscar.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_buscar.Location = new System.Drawing.Point(351, 37);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(75, 23);
             this.btn_buscar.TabIndex = 18;
             this.btn_buscar.Text = "Buscar";
-            this.btn_buscar.UseVisualStyleBackColor = true;
+            this.btn_buscar.UseVisualStyleBackColor = false;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(437, 276);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Voltar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // agendamentoBD
             // 
@@ -148,6 +163,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(524, 311);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_pesquisar);
             this.Controls.Add(this.label5);
@@ -160,6 +176,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "agendamentoBD";
@@ -183,5 +201,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_pesquisar;
         private System.Windows.Forms.Button btn_buscar;
+        private System.Windows.Forms.Button button2;
     }
 }
