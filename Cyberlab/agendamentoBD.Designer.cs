@@ -149,7 +149,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.MidnightBlue;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(437, 276);
+            this.button2.Location = new System.Drawing.Point(447, 276);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 19;
@@ -162,7 +162,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(524, 311);
+            this.ClientSize = new System.Drawing.Size(534, 311);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_pesquisar);

@@ -32,6 +32,7 @@ namespace Cyberlab
         private void novoForm3()
         {
             Application.Run(new agendamentoBD());
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

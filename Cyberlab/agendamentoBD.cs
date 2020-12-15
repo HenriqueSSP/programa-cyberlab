@@ -20,6 +20,7 @@ namespace Cyberlab
         MySqlCommand cmd = new MySqlCommand();
         Conexao con = new Conexao();
         MySqlDataReader reader;
+        DataTable dt = new DataTable();
 
         public agendamentoBD()
         {
@@ -73,5 +74,6 @@ namespace Cyberlab
         {
             Application.Run(new MenuTI());
         }
+
     }
 }
