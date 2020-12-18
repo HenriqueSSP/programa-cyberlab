@@ -32,6 +32,7 @@ Para que o programa funcione use o banco de dados que está na pasta <i>programa
 
 ## :scroll: Licença:
 <p>
+<a href="https://github.com/HenriqueSSP/programa-cyberlab/blob/master/LICENSE.md">
 <img src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
